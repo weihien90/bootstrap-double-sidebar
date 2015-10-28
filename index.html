@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Bootstrap Double Sidebar</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,12 +30,12 @@
 
     <div id="wrapper">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <!-- Left Sidebar -->
+        <div id="left-sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Start Bootstrap
+                        Left Sidebar
                     </a>
                 </li>
                 <li>
@@ -81,17 +81,42 @@
                 </li>
             </ul>
         </div>
-        <!-- /#sidebar-wrapper -->
+        <!-- /#left-sidebar-wrapper -->
+
+        <!-- Right Sidebar -->
+        <div id="right-sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">Right Sidebar</a>
+                </li>
+
+                <li>
+                    <a data-toggle="collapse" href="#recent-search" aria-expanded="false">Recent Search <span class="caret"></span></a>
+                    <div class="collapse in sub-bar" id="recent-search">
+                        <a href="#">Keyword 1</a>
+                        <a href="#">Keyword 2</a>
+                        <a href="#">Keyword 3</a>
+                        <a href="#">Keyword 4</a>
+                    </div>
+                </li>
+        </div>
+        <!-- /#right-sidebar-wrapper -->
+
+        <!-- Toggle Buttons -->
+        <a href="#left-menu-toggle" class="btn btn-link btn-md" id="left-menu-toggle"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#right-menu-toggle" class="btn btn-link btn-md" id="right-menu-toggle"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <h1>Bootstrap Double Sidebar</h1>
+			<br />
+                        <p>This template has responsive menus toggling system on both sides. Both the menus will appear collapsed on smaller screens, and will appear non-collapsed on larger screens.</p>
+			<p>The menus can be toggled manually with the <span class="glyphicon glyphicon-chevron-left"></span> and <span class="glyphicon glyphicon-chevron-right"></span> buttons positioned at bottom corners of each sides. When toggled using the buttons, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+			<p>The menu can have as many sub-menu as possible, as shown in this demo page. This is achieved using Bootstrap's Collapse.</p>
+                        <p>This project is forked from <a href="http://startbootstrap.com/template-overviews/simple-sidebar/" target="_blank">Simple Sidebar of Start Bootstrap.</a></p>
                     </div>
                 </div>
             </div>
@@ -109,9 +134,14 @@
 
     <!-- Menu Toggle Script -->
     <script>
-    $("#menu-toggle").click(function(e) {
+    $("#left-menu-toggle").click(function(e) {
         e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
+        $("#wrapper").toggleClass("left-toggled");
+    });
+
+    $("#right-menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("right-toggled");
     });
     </script>
 

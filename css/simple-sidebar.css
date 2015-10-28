@@ -14,11 +14,15 @@
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled {
+#wrapper.left-toggled {
     padding-left: 250px;
 }
 
-#sidebar-wrapper {
+#wrapper.right-toggled {
+    padding-right: 250px;
+}
+
+#left-sidebar-wrapper {
     z-index: 1000;
     position: fixed;
     left: 250px;
@@ -33,7 +37,26 @@
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled #sidebar-wrapper {
+#right-sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 0;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.left-toggled #left-sidebar-wrapper {
+    width: 250px;
+}
+
+#wrapper.right-toggled #right-sidebar-wrapper {
     width: 250px;
 }
 
@@ -43,9 +66,13 @@
     padding: 15px;
 }
 
-#wrapper.toggled #page-content-wrapper {
+#wrapper.left-toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
+}
+
+#wrapper.right-toggled #page-content-wrapper {
+    position: absolute;
 }
 
 /* Sidebar Styles */
@@ -96,6 +123,8 @@
     background: none;
 }
 
+/* Sub-bar styles */
+
 li > .sub-bar {
     padding-left: 10px;
     font-size: 0.85em;
@@ -106,20 +135,48 @@ li > .sub-bar {
     font-size: 0.95em;
 }
 
+/* Toggle Buttons */
+#left-menu-toggle {
+    position: fixed;
+    left: 0; 
+    bottom: 0; 
+    z-index: 1001
+}
+
+#right-menu-toggle {
+    position: fixed;
+    right:0; 
+    bottom: 0; 
+    z-index: 1001
+}
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
+        padding-right: 250px;
     }
 
-    #wrapper.toggled {
+    #wrapper.left-toggled {
         padding-left: 0;
     }
 
-    #sidebar-wrapper {
+    #wrapper.right-toggled {
+        padding-right: 0;
+    }
+
+    #left-sidebar-wrapper {
         width: 250px;
     }
 
-    #wrapper.toggled #sidebar-wrapper {
+    #right-sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.left-toggled #left-sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.right-toggled #right-sidebar-wrapper {
         width: 0;
     }
 
@@ -128,8 +185,13 @@ li > .sub-bar {
         position: relative;
     }
 
-    #wrapper.toggled #page-content-wrapper {
+    #wrapper.left-toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
+    }
+
+    #wrapper.right-toggled #page-content-wrapper {
+        position: relative;
+        margin-left: 0;
     }
 }
