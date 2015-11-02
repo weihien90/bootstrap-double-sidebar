@@ -1,26 +1,25 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Simple Sidebar](http://startbootstrap.com/template-overviews/simple-sidebar/)
+# Bootstrap Double Sidebar
 
-[Simple Sidebar](http://startbootstrap.com/template-overviews/simple-sidebar/) is an off canvas sidebar navigation template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+[View DEMO here](http://weihien90.github.io/bootstrap-double-sidebar/)
+
+**Bootstrap Double Sidebar** is a [Bootstrap](https://github.com/twbs/bootstrap) template with sidebar on both sides. Both the sidebar appear collapsed on smaller screens, and will appear non-collapsed on larger screens.
+
+The sidebars can be manually toggled, and able to contain multi-level nested menu using [Bootstrap Collapse](http://getbootstrap.com/javascript/#collapse).
 
 ## Getting Started
 
 To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
+* Download the latest release
 * Fork this repository on GitHub
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-simple-sidebar/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/simple-sidebar/).
+If you encounter any bugs or issue with this template, [open a new issue](https://github.com/weihien90/bootstrap-double-sidebar/issues) here or feel free to contribute by submitting [pull request](https://github.com/weihien90/bootstrap-double-sidebar/pulls).
 
 ## Creator
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+This project is forked from [Simple Sidebar of Start Bootstrap](http://startbootstrap.com/template-overviews/simple-sidebar/).
 
 ## Copyright and License
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-simple-sidebar/blob/gh-pages/LICENSE) license.
+> Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-simple-sidebar/blob/gh-pages/LICENSE) license.
