@@ -2,9 +2,9 @@
 
 [View DEMO here](http://weihien90.github.io/bootstrap-double-sidebar/)
 
-**Bootstrap Double Sidebar** is a [Bootstrap](https://github.com/twbs/bootstrap) template with sidebar on both sides. Both the sidebar appear collapsed on smaller screens, and will appear non-collapsed on larger screens.
+**Bootstrap Double Sidebar** is a [Bootstrap](https://getbootstrap.com/docs/3.3/) template with sidebar on both sides. Both the sidebar appear collapsed on smaller screens, and will appear non-collapsed on larger screens.
 
-The sidebars can be manually toggled, and able to contain multi-level nested menu using [Bootstrap Collapse](http://getbootstrap.com/javascript/#collapse).
+The sidebars can be manually toggled, and able to contain multi-level nested menu using [Bootstrap Collapse](https://getbootstrap.com/docs/3.3/javascript/#collapse).
 
 ## Getting Started
 
