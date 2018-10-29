@@ -1,4 +1,4 @@
-# Bootstrap Double Sidebar
+# Bootstrap (v3) Double Sidebar
 
 [View DEMO here](http://weihien90.github.io/bootstrap-double-sidebar/)
 
